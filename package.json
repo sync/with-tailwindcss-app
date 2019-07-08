@@ -1,21 +1,26 @@
 {
   "name": "with-tailwindcss",
   "version": "1.0.0",
+  "license": "ISC",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@zeit/next-css": "^1.0.1",
-    "next": "^8.1.0",
+    "autoprefixer": "^9.6.0",
+    "next": "^8.1.1-canary.69",
+    "postcss-import": "^12.0.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "tailwindcss": "^1.0.3"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "cssnano": "^4.1.10",
-    "postcss-easy-import": "^3.0.0",
-    "tailwindcss": "^1.0.1"
+    "webpack": "^4.35.2"
   }
 }

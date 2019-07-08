@@ -1,10 +1,7 @@
-import Nav from '../components/nav'
+import Layout from '../components/Layout'
 
 export default () => (
-  <div>
-    <Nav />
-    <div className='hero'>
-      <h1 className='title'>Next.js + Tailwind css</h1>
-    </div>
-  </div>
+  <Layout>
+    <h1 className="text-5xl font-bold text-purple-500">Hello world!</h1>
+  </Layout>
 )

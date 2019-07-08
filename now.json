@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "with-tailwindcss",
+  "regions": ["all"],
+  "builds": [
+    { "src": "/static/*", "use": "@now/static" },
+    { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
